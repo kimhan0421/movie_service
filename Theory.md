@@ -35,6 +35,8 @@ Part 2 - JSX & PROPS
 ===============
 콘솔에 npm start 한 상태로 돌려야 함.
 
+2-1
+----
 <App /> \
 => componet. \
 => react는 component와 함께 동작. \
@@ -53,6 +55,8 @@ function Potato() \
 따라서, index.js에는 <App />가 이미 있으니, App.js에 Potato를 import \
 ./ = directory
 
+2-2
+----
 다음은 같은 뜻
 ```html
 <div class = "hello">
@@ -80,3 +84,24 @@ map => function으로 function의 array의 각 item 적용함
 ```
 에서 dish는 obj   
 dish.name이나 dish.image로 obj의 name과 image를 가져옴
+
+2-3
+---
+map => 무조건 array로 돌려줌   
+react의 모든 element => 유일해야 하는데, 이를 list안으로 넣으면 유일성을 잃어버림
+
+2-4
+----
+prop-types할일   
+- 전달받은 props가 원하는 props인지 확인해야 함.
+
+node.js에 무언가를 설치하려면,   
+- npm i prop-types
+- 설치 확인 ) package.json에서 "prop-types"찾기
+
+Food 함수에 prop-type을 추가할 것  
+- 이때 이름은 반드시 proptype
+- type확인
+- boolean, array, ture, object 등을 확인 할 수 있다
+- 더불어 required를 호출하는 방식으로 확인가능
+- 따라서, type과 required 확인 가능
