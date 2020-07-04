@@ -52,3 +52,31 @@ function Potato() \
 ### react application이 하나의 component만을 rendering해야 함.
 따라서, index.js에는 <App />가 이미 있으니, App.js에 Potato를 import \
 ./ = directory
+
+다음은 같은 뜻
+```html
+<div class = "hello">
+```
+```jsx
+<Food fav = "noodle" />
+```
+기본적으로 어떤 것의 이름 속성을 따옴표+텍스트와 같은 방식
+=> food component에 fav라는 이름의 property를 noodle라는 value로 줌
+
+function Food(props)   
+> props에는 <Food fav = "noodle" />의 값들이 들어감   
+> = function Food({fav})
+
+Food({fav})
+> <Food fav = "noodle" />의 fav 같아야 함
+
+jsx = HTML + JS   
+
+map => function으로 function의 array의 각 item 적용함   
+```react
+{foodILike.map(dish => (
+    <Food name={dish.name} picture={dish.image} />
+))}
+```
+에서 dish는 obj   
+dish.name이나 dish.image로 obj의 name과 image를 가져옴
