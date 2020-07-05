@@ -6,7 +6,8 @@ const foodILike = [
     id: 1,
     name: "Kimchi",
     image:
-      "http://aeriskitchen.com/wp-content/uploads/2008/09/kimchi_bokkeumbap_02-.jpg"
+      "http://aeriskitchen.com/wp-content/uploads/2008/09/kimchi_bokkeumbap_02-.jpg",
+      rating: 4.1
   },
   {
     id: 2,
@@ -27,7 +28,7 @@ const foodILike = [
     name: "Doncasu",
     image:
       "https://s3-media3.fl.yelpcdn.com/bphoto/7F9eTTQ_yxaWIRytAu5feA/ls.jpg",
-    rating: 5.5
+    rating: 3.5
   },
   {
     id: 5,
