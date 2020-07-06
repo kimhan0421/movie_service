@@ -122,3 +122,77 @@ map함수 => 반드시 return
 
 key는 유일해야 함. => movie ID줄 수 있음
 
+<p align="center">
+  <strong>4.3</strong><br>
+</p>
+JS ) class - class => 두번째 classs 이름을 className으로 변경해야 혼란을 막음
+
+map함수dml argument=> item, item number
+
+<p align="center">
+  <strong>4.4</strong><br>
+</p>
+JS ) 
+.slice => 글자 자르기
+
+<h1 align="center">
+CONCLUSIONS
+</h1> 
+
+cloud올리기 
+> 설치할 것   
+> gh-pages
++ 웹사이트를 github의 github page도메인에 나타나도록 해줌
+> npm i gh-pages
+
+package.json
++ "homepage": "username.github.io/프로젝트 명"
++ 이때, 소문자만 가능하고 띄어쓰기 불가
+
+npm run build 한 후, 이를 deploy에 추가 => 이름은 같아야 함
+```react
+"deploy": "gh-pages -d build",
+"predeploy": "npm run bulid"
+```
++ deploy는 pre~를 호출할 것이고
++ pre~는 npm run build할 것임
++ build는 build script호출
++ script는 folder줄 것임
++ 완료되면 pre~는 끝날 것이고 
++ deploy는 gh-pages를 호출할 것이고, build 폴더를 업로드 할 것임
++ 수정할 때마다 npm run build 필요
+
+<h1 align="center">
+ROUTING BONUS
+</h1> 
+<p align="center">
+  <strong>6.1</strong><br>
+</p>
+
+네비게이션을 만들어 주는 패키지 => react-router dom
++ npm i react-router-dom
+
+router
++ home => Home.js
++ about => About.js
+
+```
+import { HashRouter } from "react-router-dom";
+```
++ 다양한 종류의 router들 중 HashRouter 사용하겠다
+
+<p align="center">
+  <strong>6.1</strong><br>
+</p>
+
+<Route path="/about" component={About} /> 
++ 렌더링할 스크린
++ 뭘 할지 정해줌
+
+<Route path="/" exact={true} component={Home} />
++ exact={true}를 추가해서 url이 /일때만 home을 보여준다
+
+<a href="/">Home</a> => HTML로 새로고침됨 \
+따라서, react가 죽음   
++ Link이용
++ router안에 link 있어야 함
