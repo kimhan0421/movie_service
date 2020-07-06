@@ -166,7 +166,7 @@ npm run build 한 후, 이를 deploy에 추가 => 이름은 같아야 함
 ROUTING BONUS
 </h1> 
 <p align="center">
-  <strong>6.1</strong><br>
+  <strong>6.2</strong><br>
 </p>
 
 네비게이션을 만들어 주는 패키지 => react-router dom
