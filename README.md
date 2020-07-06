@@ -6,7 +6,7 @@ Movie App
   <strong>React JS Fundamentals</strong><br>
 </p>
 
-
+## :movie_camera: [Movi_Service](https://kimhan0421.github.io/movie_service/)
 
 ## 📋 Requirements
 - node.js
