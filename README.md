@@ -11,7 +11,6 @@ Movie App
 ## 📋 Requirements
 - node.js
 - npm
-- npx
 - git
 
 cmd
