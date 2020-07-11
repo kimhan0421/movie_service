@@ -11,9 +11,8 @@ Movie App
 ## 📋 Requirements
 - node.js
 - npm
-- git
 
-cmd
+shell
 > Documents에 npx create-react-app 폴더명
 
 ## 📖 Documentation
